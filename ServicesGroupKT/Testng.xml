@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ServicesGroupKT">
+
+	<listeners>
+		<listener class-name="com.ServicesGroupKT.Utilities.Reporting" />
+	</listeners>
+
+	<test name="ServicesGroupKT Test" thread-count="4">
+		<classes>
+			<class name="com.ServicesGroupKT.TestCases.TC01_Get_All_Counties" />
+			<class name="com.ServicesGroupKT.TestCases.TC02_Get_Each_Country" />
+			<class name="com.ServicesGroupKT.TestCases.TC03_Get_Inexistent_Countries" />
+			<class name="com.ServicesGroupKT.TestCases.TC04_Add_New_Country" />
+		</classes>
+	</test>
+
+</suite>
